@@ -7,7 +7,26 @@ th {
     text-align: left;
 }
 
-.solution {
+.solution,
+.discussion {
     padding: 20px;
+}
+
+.solution:before,
+.discussion:before {
+    display: block;
+    border-bottom: 1px solid black;
+}
+.solution:before {
+    content: 'Oplossing';
+}
+.discussion:before {
+    content: "Discussiepunt";
+}
+
+.solution {
     background-color: lightseagreen;
+}
+.discussion {
+    background-color: orange;
 }
