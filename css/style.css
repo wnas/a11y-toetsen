@@ -6,3 +6,8 @@ body {
 th {
     text-align: left;
 }
+
+.solution {
+    padding: 20px;
+    background-color: lightseagreen;
+}
