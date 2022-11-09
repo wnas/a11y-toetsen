@@ -11,6 +11,9 @@ th {
 .discussion {
     padding: 20px;
 }
+.issue {
+    padding: 20px 10px;
+}
 
 .solution:before,
 .discussion:before {
@@ -29,4 +32,11 @@ th {
 }
 .discussion {
     background-color: orange;
+}
+.issue {
+    background-color: black;
+}
+.issue a {
+    color: white;
+    font-size: 150%;
 }
