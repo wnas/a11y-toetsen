@@ -8,12 +8,11 @@ th {
 }
 
 .solution,
-.discussion {
+.discussion,
+.issue {
     padding: 20px;
 }
-.issue {
-    padding: 20px 10px;
-}
+
 
 .solution:before,
 .discussion:before {
