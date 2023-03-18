@@ -3,39 +3,72 @@ body {
     max-width: 40em;
     margin: 0 auto;
 }
+
 th {
     text-align: left;
 }
 
 .solution,
 .discussion,
-.issue {
+.issue,
+.extern,
+.pdf {
     padding: 20px;
 }
 
 
 .solution:before,
-.discussion:before {
+.discussion:before,
+.extern::before,
+.pdf::before {
     display: block;
+    padding: 10px 0;
+    margin-bottom: 10px;
     border-bottom: 1px solid black;
 }
+
 .solution:before {
     content: 'Oplossing';
 }
+
 .discussion:before {
     content: "Discussiepunt";
+}
+
+.extern:before {
+    content: "Geen pleio website"
+}
+
+.pdf::before {
+    content: "PDF";
 }
 
 .solution {
     background-color: lightseagreen;
 }
+
 .discussion {
     background-color: orange;
 }
+
+.extern {
+    background-color: hotpink;
+}
+
+.pdf {
+    background-color: coral;
+}
+
 .issue {
     background-color: black;
 }
+
 .issue a {
     color: white;
     font-size: 150%;
+}
+
+.readMore {
+    display: none;
+    ;
 }

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Realisatie IBDS - pleio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Toegankelijkheidsonderzoeken" />
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../css/style.css" media="all">
+</head>
+
+<body>
+    <div class="site-container">
+        <header>
+            <div>
+                <span class="h">Toegankelijkheidsonderzoek</span>
+                <!--
+        <span class="h">Toegankelijkheidscertificaat</span>  
+        <span class="h">Quickscan toegankelijkheid</span>
+-->
+            </div>
+        </header>
+        <main>
+            <h1>Issues: <br>Content-audit digitale toegankelijkheid website Realisatie IBDS</h1>
+            <p>(Alleen de bevindingen)</p>
+            <h2>Scope van de evaluatie</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Naam website</th>
+                        <td>Realisatie IBDS</td>
+                    </tr>
+                    <tr>
+                        <th>Datum</th>
+                        <td>10 maart 2023</td>
+                    </tr>
+                    <tr>
+                        <th>Scope van de website</th>
+                        <td>
+                            <!-- for -->
+                            Binnen de scope van het onderzoek vallen:<br>
+                            <ul>
+                                <li>De content op het domein realisatieibds.pleio.nl/. </li>
+                                <li>De PDF's op het domein realisatieibds.pleio.nl/.</li>
+                                <li>De content op het subdomein
+                                    magazines.interbestuurlijkedatastrategie.nl/ibds/2022/01.</li>
+                            </ul>Buiten de scope van het onderzoek vallen:<br>
+                            <ul>
+                                <li>De techniek op het domein realisatieibds.pleio.nl/. Dit onderzocht bij een apart
+                                    onderzoek. </li>
+                                <li>De techniek op het domein magazines.interbestuurlijkedatastrategie.nl/ibds/2022/01.
+                                    Dit vereist een apart onderzoek. </li>
+                                <li>Subwebsite(s) waarbij de HTML en/of het systeem afwijkt van de onderzochte website.
+                                </li>
+                                <li>Alle externe systemen en websites waar via het onderzochte domein met een link naar
+                                    wordt verwezen.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Conformiteitsdoel</th>
+                        <td>WCAG 2.1 niveau AA</td>
+                    </tr>
+                    <tr>
+                        <th>alle puntent</th>
+                        <td><a href="index.html">Alle punten</a></td>
+                    </tr>
+                    <tr>
+                        <th>Redactie</th>
+                        <td><a href="content.html">Punten voor de redactie</a></td>
+                    </tr>
+                    <tr>
+                        <th>Discussie</th>
+                        <td><a href="discussie.html">Punten voor discussie</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Uitgebreide toetsresultaten</h2>
+            <div class="outcome">Aantal bevindingen: 6</div>
+
+            <h4 id="adaptable">1.3 Aanpasbaar</h4>
+            <h5 id="info-and-relationships">1.3.1 Info en relaties (Niveau A)</h5>
+            <p class="readMore">Informatie over succescriterium <a
+                    href="https://www.w3.org/TR/WCAG21/#info-and-relationships" target="_blank">1.3.1 Info en
+                    relaties</a></p>
+            <div class="outcome">
+                <p class="failed">
+                    Uitkomst: Onvoldoende
+                </p>
+            </div>
+
+            <p><strong>Bevinding 10:</strong> Deze bevinding is mogelijk technisch van aard: <br>Naast de link 'Bart den
+                Dulk' op de homepage staat een afbeelding dat bij hover en focus aanvullende content laat zien. Deze
+                afbeelding is verbogen voor hulpsoftware omdat het in een div-element is geplaatst waarop
+                aria-hidden=true staat. Hierdoor is het voor gebruikers van bijvoorbeeld voorleessoftware niet duidelijk
+                dat dit element aanvullende informatie toon, omdat het element niet wordt voorgelezen. Zorg ervoor dat
+                het element niet verbogen is voor hulpsoftware door aria-hidden=true te verwijderen. <br>Dit probleem
+                komt voor op meerdere pagina's, bijvoorbeeld op pagina <a
+                    href="https://realisatieibds.pleio.nl/search?q=data" target="_blank"
+                    rel="noopener noreferrer">search?q=data</a> en
+                <a href="https://realisatieibds.pleio.nl/groups/view/0056c9ef-5c2e-44f9-a998-e735f1e9ccaa/federatief-datastelsel/questions/view/f0215c22-84ea-4ee2-ae03-ad6ee30ba985/ontbrekende-lijn-houtskoolschets"
+                    target="_blank" rel="noopener noreferrer">ontbrekende-lijn-houtskoolschets</a>.
+            </p>
+            <p class="issue"><a href="https://gitlab.com/pleio/beheer/-/issues/12078">12078</a></p>
+
+            <p><strong>Bevinding 12:</strong> Advies: Pagina <a href="https://realisatieibds.pleio.nl/search?q=data"
+                    target="_blank" rel="noopener noreferrer">search?q=data</a> bevat geen H1-kop.
+                Een H1-kop geeft altijd aan wat het hoofdonderwerp van een pagina is. Deze informatie is belangrijk voor
+                mensen die gebruikmaken van een koppenlijst of voorleessoftware. Zorg er daarom voor dat elke pagina een
+                H1-kop bevat. </p>
+            <p class="issue"><a href="https://gitlab.com/pleio/beheer/-/issues/12079">12079</a></p>
+            <p><strong>Bevinding 13:</strong> Advies: De koppenstructuur op pagina <a
+                    href="https://realisatieibds.pleio.nl/search?q=data" target="_blank"
+                    rel="noopener noreferrer">search?q=data</a>
+                is niet correct. De pagina begint met twee H4-koppen die worden opgevolgd door een H3-kop. Een goede
+                koppenstructuur is beter voor de toegankelijkheid van een pagina, het helpt gebruikers van hulpsoftware
+                met navigeren. Een goede koppenstructuur begint met een H1-kop voor de titel van de pagina, gevolgd door
+                H2-koppen voor de koppen, H3-koppen voor de tussenkoppen, etcetc. Pas een goede koppenstructuur toe op
+                elke pagina.<br>Een soortgelijk probleem komt ook voor op andere pagina's, bijvoorbeeld op pagina
+                <a href="https://realisatieibds.pleio.nl/cms/view/b0dfdf8b-ea42-4c6b-b792-dff06a0992f8/kennisbank"
+                    target="_blank" rel="noopener noreferrer">kennisbank</a> en
+                <a href="https://realisatieibds.pleio.nl/groups/view/0056c9ef-5c2e-44f9-a998-e735f1e9ccaa/federatief-datastelsel/questions/view/f0215c22-84ea-4ee2-ae03-ad6ee30ba985/ontbrekende-lijn-houtskoolschets"
+                    target="_blank" rel="noopener noreferrer">ontbrekende-lijn-houtskoolschets</a>
+            </p>
+            <ul class="issue">
+                <li><a href="https://gitlab.com/pleio/beheer/-/issues/12080">12080</a></li>
+                <li><a href="https://gitlab.com/pleio/beheer/-/issues/12081">12081</a></li>
+            </ul>
+
+            <h3 id="operable">2. Bedienbaar</h3>
+            <h4 id="keyboard-accessible">2.1 Toetsenbordtoegankelijk</h4>
+            <h5 id="character-key-shortcuts">2.1.4 Enkel teken sneltoets (Niveau A)</h5>
+            <p class="readMore">Informatie over succescriterium <a
+                    href="https://www.w3.org/TR/WCAG21/#character-key-shortcuts" target="_blank">2.1.4 Enkel teken
+                    sneltoets</a></p>
+            <div class="outcome">
+                <p class="failed">
+                    Uitkomst: Onvoldoende
+                </p>
+            </div>
+            <p><strong>Bevinding 19:</strong> Op de homepage wordt gebruikgemaakt van de videospeler van Vimeo. Deze
+                videospeler maakt gebruik van bediening door enkele tekentoetsen, bijvoorbeeld f voor fullscreen of c
+                voor ondertiteling. Deze functionaliteit kan mensen die gebruikmaken van voorleessoftware in de weg
+                zitten. Deze mensen zijn afhankelijk van de tekentoetsen om de voorleessoftware te bedienen. Los dit op
+                door de embedcode van de Vimeo video aan te passen zodat de bediening met tekentoetsen uit staat. De
+                eigenschap die toegevoegd moet worden aan de embedcode is 'keyboard: false'. Met deze aanpassing zorg je
+                ervoor dat je voldoet aan dit succescriterium.</p>
+            <p class="issue"><a href="https://gitlab.com/pleio/beheer/-/issues/12082">12082</a></p>
+
+            <h4 id="input-modalities">2.5 Input modaliteiten</h4>
+            <h5 id="label-in-name">2.5.3 Label in naam (Niveau A)</h5>
+            <p class="readMore">Informatie over succescriterium <a href="https://www.w3.org/TR/WCAG21/#label-in-name"
+                    target="_blank">2.5.3 Label in naam</a></p>
+            <div class="outcome">
+                <p class="failed">
+                    Uitkomst: Onvoldoende
+                </p>
+            </div>
+            <p><strong>Bevinding 22:</strong> Op pagina
+                <a target="_blank"
+                    href="https://realisatieibds.pleio.nl/news/view/bd13c048-373f-4da0-b825-e69b11fda496/mag-een-automatische-drone-worden-ingezet-boven-bedrijventerrein-om-criminaliteit-te-voorkomen">mag-een-automatische-drone-worden-ingezet-boven-bedrijventerrein-om-criminaliteit-te-voorkomen
+                </a>
+                staat de knop met het visuele label '0 likes'. De toegankelijke naam van deze knop is 'Like item 'Mag
+                een automatische drone worden ingezet boven bedrijventerrein om criminaliteit te voorkomen?''. Het
+                visuele label van de knop komt niet voor in de toegankelijke naam, hierdoor is de knop moeilijk te
+                bedienen voor bezoekers die gebruikmaken van spraakgestuurde bediening. Ook is de informatie dat 0 likes
+                zijn gegeven aan nieuwsbericht niet beschikbaar voor screenreadergebruikers. Dat komt omdat deze
+                informatie is geplaatst in een div-element dat in het button-element is genest en het aria-label op het
+                button-element dit overschrijft. Zorg ervoor dat deze informatie beschikbaar is voor hulpsoftware en dat
+                het visuele label van de knop voorkomt in de toegankelijke naam, bijvoorbeeld door de tekst '0 likes'
+                toe te voegen aan het aria-label.<br>Deze knop komt ook voor op pagina
+                <a href="https://realisatieibds.pleio.nl/groups/view/0056c9ef-5c2e-44f9-a998-e735f1e9ccaa/federatief-datastelsel/questions/view/f0215c22-84ea-4ee2-ae03-ad6ee30ba985/ontbrekende-lijn-houtskoolschets"
+                    target="_blank" rel="noopener noreferrer">ontbrekende-lijn-houtskoolschets</a>.
+            </p>
+            <p class="issue"><a href="https://gitlab.com/pleio/beheer/-/issues/12083">12083</a></p>
+            <h3 id="understandable">3. Begrijpelijk</h3>
+            <h4 id="input-assistance">3.3 Assistentie bij invoer</h4>
+            <h5 id="labels-or-instructions">3.3.2 Labels of instructies (Niveau A)</h5>
+            <p class="readMore">Informatie over succescriterium <a
+                    href="https://www.w3.org/TR/WCAG21/#labels-or-instructions" target="_blank">3.3.2 Labels of
+                    instructies</a></p>
+            <div class="outcome">
+                <p class="failed">
+                    Uitkomst: Onvoldoende
+                </p>
+            </div>
+            <p><strong>Bevinding 23:</strong> Als op pagina
+                <a target="_blank"
+                    href="https://realisatieibds.pleio.nl/news/view/bd13c048-373f-4da0-b825-e69b11fda496/mag-een-automatische-drone-worden-ingezet-boven-bedrijventerrein-om-criminaliteit-te-voorkomen">mag-een-automatische-drone-worden-ingezet-boven-bedrijventerrein-om-criminaliteit-te-voorkomen
+                </a>
+                op de knop 'Reageer...' wordt gedrukt, verschijnt een invoerveld met de placeholdertekst 'Schrijf een
+                reactie'. Een placeholdertekst is niet geschikt om een invoerveld een label te geven. De
+                placeholdertekst verdwijnt namelijk wanneer bezoekers iets invoeren bij het veld. Dit kan het voor
+                bezoekers met bepaalde cognitieve beperkingen lastig maken om het veld goed in te vullen. Zorg er daarom
+                voor het invoerveld een visueel label krijgt dat in beeld blijft staan wanneer bezoekers iets
+                invoeren.<br>Dit invoerveld komt ook voor op pagina
+                realisatieibds.pleio.nl/events/view/b0e7d83c-b649-4034-9d2d-3bfc1b2a82c2/congres-informatiegestuurde-overheid.
+            </p>
+            <p>Dit geld voor alle reageer opties in de hele site.</p>
+            <p class="issue"><a href="https://gitlab.com/pleio/beheer/-/issues/12084">12084</a></p>
+
+
+
+    </div>
+
+</body>
+
+</html>

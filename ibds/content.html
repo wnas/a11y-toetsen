@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Realisatie IBDS - content</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Toegankelijkheidsonderzoeken" />
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../css/style.css" media="all">
+</head>
+
+<body>
+    <div class="site-container">
+        <header>
+            <div>
+                <span class="h">Toegankelijkheidsonderzoek</span>
+            </div>
+        </header>
+        <main>
+            <h1>Issues: <br>Content-audit digitale toegankelijkheid website Realisatie IBDS</h1>
+            <p>(Alleen de bevindingen)</p>
+            <h2>Scope van de evaluatie</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Naam website</th>
+                        <td>Realisatie IBDS</td>
+                    </tr>
+                    <tr>
+                        <th>Datum</th>
+                        <td>10 maart 2023</td>
+                    </tr>
+                    <tr>
+                        <th>Scope van de website</th>
+                        <td>
+                            <!-- for -->
+                            Binnen de scope van het onderzoek vallen:<br>
+                            <ul>
+                                <li>De content op het domein realisatieibds.pleio.nl/. </li>
+                                <li>De PDF's op het domein realisatieibds.pleio.nl/.</li>
+                                <li>De content op het subdomein
+                                    magazines.interbestuurlijkedatastrategie.nl/ibds/2022/01.</li>
+                            </ul>Buiten de scope van het onderzoek vallen:<br>
+                            <ul>
+                                <li>De techniek op het domein realisatieibds.pleio.nl/. Dit onderzocht bij een apart
+                                    onderzoek. </li>
+                                <li>De techniek op het domein magazines.interbestuurlijkedatastrategie.nl/ibds/2022/01.
+                                    Dit vereist een apart onderzoek. </li>
+                                <li>Subwebsite(s) waarbij de HTML en/of het systeem afwijkt van de onderzochte website.
+                                </li>
+                                <li>Alle externe systemen en websites waar via het onderzochte domein met een link naar
+                                    wordt verwezen.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Conformiteitsdoel</th>
+                        <td>WCAG 2.1 niveau AA</td>
+                    </tr>
+                    <tr>
+                        <th>alle puntent</th>
+                        <td><a href="index.html">Alle punten</a></td>
+                    </tr>
+                    <tr>
+                        <th>Leverancier</th>
+                        <td><a href="leverancier.html">Punten voor pleio</a></td>
+                    </tr>
+                    <tr>
+                        <th>Discussie</th>
+                        <td><a href="discussie.html">Punten voor discussie</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Uitgebreide toetsresultaten</h2>
+            <div class="outcome">Aantal bevindingen: 17</div>
+            <h3 id="perceivable">1. Waarneembaar</h3>
+            <h4 id="text-alternatives">1.1 Tekstalternatieven</h4>
+            <h5 id="non-text-content">1.1.1 Niet-tekstuele content (Niveau A)</h5>
+            <p class="readMore">Informatie over succescriterium <a href="https://www.w3.org/TR/WCAG21/#non-text-content"
+                    target="_blank">1.1.1 Niet-tekstuele content</a></p>
+            <div class="outcome">
+                <p class="failed">
+                    Uitkomst: Onvoldoende
+                </p>
+            </div>
+            <p><strong>Bevinding 1:</strong> Boven aan elke pagina staat het logo van de Rijksoverheid. Dit logo heeft
+                de alternatieve tekst 'Rijkslint'. Deze alternatieve tekst brengt niet dezelfde informatie over aan
+                bezoekers als het logo visueel doet. Voor bezoekers die het scherm kunnen zien is het duidelijk dat dit
+                een website van de Rijksoverheid is, voor bezoekers die het scherm niet kunnen zien wordt dat niet
+                duidelijk gemaakt met de alternatieve tekst 'Rijkslint'. Zorg ervoor dat in de alternatieve tekst van
+                een logo minstens de organisatienaam voorkomt, de alternatieve tekst 'Rijksoverheid' is hier
+                voldoende.<br>Dit logo komt voor op elke pagina van het domein realisatieibds.pleio.nl/. </p>
+
+            <p class="extern"><strong>Bevinding 3:</strong> Op pagina
+                magazines.interbestuurlijkedatastrategie.nl/ibds/2022/01/stelseldag-2022--terugblik staat voor
+                verschillende links een icoon dat aangeeft dat deze links verwijzen naar een externe pagina. Deze iconen
+                zijn door middel van het pseudo-element :before en de content property in de CSS op de pagina gezet. Op
+                deze manier kan het zijn dat het icoon wegvalt, bijvoorbeeld voor mensen die een eigen CSS gebruiken, of
+                wanneer de CSS niet geladen wordt. De content property is alleen geschikt voor het toevoegen van puur
+                decoratieve content. Een oplossing voor dit probleem kan zijn om het icoon via het img- of svg-element
+                op de pagina te plaatsen. <br>Dit probleem komt ook voor op andere pagina's van het magazine,
+                bijvoorbeeld op pagina magazines.interbestuurlijkedatastrategie.nl/ibds/2022/01/actueel. </p>
+            <p class="extern"><strong>Bevinding 4:</strong> Advies: De afbeelding op pagina
+                magazines.interbestuurlijkedatastrategie.nl/ibds/2022/01/actueel heeft een bijschrift maar geen
+                alternatieve tekst. Het is beter om de afbeelding ook een alternatieve tekst te geven zodat de
+                afbeelding wordt voorgelezen door voorleessoftware. Op dit moment wordt de afbeelding als decoratief
+                gezien door voorleessoftware vanwege het lege alt-attribuut op het img-element. Zorg er wel voor dat
+                wanneer de afbeelding een alternatieve tekst krijgt deze anders is dan het bijschrift.</p>
+            <h4 id="time-based-media">1.2 Op tijd gebaseerde media</h4>
+            <h5 id="audio-description-or-media-alternative-prerecorded">1.2.3 Audiodescriptie of media-alternatief
+                (vooraf opgenomen) (Niveau A)</h5>
+            <p class="readMore">Informatie over succescriterium <a
+                    href="https://www.w3.org/TR/WCAG21/#audio-description-or-media-alternative-prerecorded"
+                    target="_blank">1.2.3 Audiodescriptie of media-alternatief (vooraf opgenomen)</a></p>
+            <div class="outcome">
+                <p class="failed">
+                    Uitkomst: Onvoldoende
+                </p>
+            </div>
+            <p><strong>Bevinding 5:</strong> Op de homepage staat een video waarin teksten in beeld worden getoond,
+                ongeveer rond 1:26. Deze informatie komt niet terug in het audiospoor en er is geen media-alternatief
+                voor de video. Hierdoor missen bezoekers die het scherm niet kunnen zien de informatie die als tekst in
+                beeld komt te staan. Zorg ervoor dat deze video een media-alternatief krijgt, bijvoorbeeld een
+                transcript. Of maak gebruik van een audiodescriptie om ook te voldoen aan succescriterium 1.2.5. <br>Het
+                is overigens beter om een transcript én een audiodescriptie te hebben bij een video. De tekst in een
+                transcript kan namelijk worden omgezet naar braille, waar mensen die niet kunnen horen en zien
+                afhankelijk van zijn.</p>
+            <h5 id="audio-description-prerecorded">1.2.5 Audiodescriptie (vooraf opgenomen) (Niveau AA)</h5>
+            <p class="readMore">Informatie over succescriterium <a
+                    href="https://www.w3.org/TR/WCAG21/#audio-description-prerecorded" target="_blank">1.2.5
+                    Audiodescriptie (vooraf opgenomen)</a></p>
+            <div class="outcome">
+                <p class="failed">
+                    Uitkomst: Onvoldoende
+                </p>
+            </div>
+            <p><strong>Bevinding 6:</strong> Op de homepage staat een video waarin teksten in beeld worden getoond,
+                ongeveer rond 1:26. Deze informatie komt niet terug in het audiospoor. Hierdoor missen bezoekers die het
+                scherm niet kunnen zien en afhankelijk zijn van audio de informatie. Zorg ervoor dat wanneer teksten in
+                beeld staan deze voorkomen in het audiospoor. Dit kan door de teksten te laten voorlezen door een
+                voiceover, of door een audiodescriptie toe te voegen aan de video.</p>
+            <h4 id="adaptable">1.3 Aanpasbaar</h4>
+            <h5 id="info-and-relationships">1.3.1 Info en relaties (Niveau A)</h5>
+            <p class="readMore">Informatie over succescriterium <a
+                    href="https://www.w3.org/TR/WCAG21/#info-and-relationships" target="_blank">1.3.1 Info en
+                    relaties</a></p>
+            <div class="outcome">
+                <p class="failed">
+                    Uitkomst: Onvoldoende
+                </p>
+            </div>
+            <p><strong>Bevinding 7:</strong> Op de homepage is het strong-element gebruikt om de introductietekst
+                dikgedrukt te maken. Het strong-element is niet geschikt om teksten mee op te maken. Het element heeft
+                namelijk een eigen semantische waarde: het geeft aan dat een tekst belangrijk is. Ook is het
+                strong-element alleen bedoelt om op één of enkele woorden te plaatsen, niet op lange stukken teksten.
+                Verwijder daarom het strong-element van deze tekst en maak het op een andere manier op, bijvoorbeeld
+                door gebruik te maken van CSS-eigenschappen of het b-element.<br>Het strong-element wordt ook op andere
+                pagina's gebruikt om teksten mee op te maken, bijvoorbeeld op pagina
+                realisatieibds.pleio.nl/cms/view/f17bdd08-7441-4968-95d4-acafdce49efb/over-de-ibds,
+                realisatieibds.pleio.nl/wiki/view/ece7409e-f659-4127-99ef-3547306657e5/advies-meervoudig-gebruik-camerabeelden
+                en magazines.interbestuurlijkedatastrategie.nl/ibds/2022/01/actueel. </p>
+            <p><strong>Bevinding 8:</strong> Op pagina
+                realisatieibds.pleio.nl/cms/view/b0dfdf8b-ea42-4c6b-b792-dff06a0992f8/kennisbank is de H2-kop 'Wat kan
+                er technisch, wat mag er juridisch en wat willen we?' opgemaakt met het strong-element. Het
+                strong-element is niet geschikt om koppen mee op te maken, het heeft namelijk een andere semantische
+                waarde dan een kop-element. Ook is het strong-element niet bedoelt om teksten visueel dikgedrukt mee te
+                maken. Los dit probleem op door het strong-element van de kop te verwijderen.<br>Dit probleem komt ook
+                voor op pagina
+                realisatieibds.pleio.nl/wiki/view/ece7409e-f659-4127-99ef-3547306657e5/advies-meervoudig-gebruik-camerabeelden.
+            </p>
+            <p><strong>Bevinding 9:</strong> De PDF op pagina
+                realisatieibds.pleio.nl/file/download/557354e7-d2dc-4f74-8a3f-8486ea24b70c/20221118-ibds-samenvatting-advies-gemeente-breda-inzet-vliegende-drone-002-prdf-5478797.pdf
+                is niet gecodeerd (van tags voorzien). Dit betekent dat de documentstructuur niet is te bepalen. Er kan
+                daardoor bijvoorbeeld niet worden bepaald wat koppen zijn, de alternatieve tekst bij afbeeldingen en wat
+                de leesvolgorde is. Omdat tags ontbreken kan de PDF niet volledig onderzocht worden (alle succescriteria
+                met betrekking tot de PDF codelaag zoals semantische koppen en alt teksten bij afbeeldingen). Let daarom
+                op dat bij het oplossen van dit probleem nieuwe toegankelijkheidsproblemen kunnen ontstaan. </p>
+
+            <p class="extern"><strong>Bevinding 11:</strong> Advies: Op pagina
+                magazines.interbestuurlijkedatastrategie.nl/ibds/2022/01/ambassadeur-jan-van-ginkel staan losse quotes
+                die zijn opgemaakt met aanhalingstekens. Deze aanhalingstekens geven aan dat het hier om een quote gaat,
+                maar niet elke screenreader leest deze aanhalingstekens voor. Daarom is het beter om losse quotes op een
+                pagina op te maken met het blockquote-element. </p>
+
+            <h5 id="meaningful-sequence">1.3.2 Betekenisvolle volgorde (Niveau A)</h5>
+            <p class="readMore">Informatie over succescriterium <a
+                    href="https://www.w3.org/TR/WCAG21/#meaningful-sequence" target="_blank">1.3.2 Betekenisvolle
+                    volgorde</a></p>
+            <div class="outcome">
+                <p class="failed">
+                    Uitkomst: Onvoldoende
+                </p>
+            </div>
+            <p class="extern"><strong>Bevinding 14:</strong> Wanneer bezoekers op pagina
+                magazines.interbestuurlijkedatastrategie.nl/ibds/2022/01 de knop 'Naar de inhoudsopgave' activeren
+                verschijnt de inhoudsopgave op het scherm. In deze inhoudsopgave is de extra omschrijving boven de kop
+                geplaatst waar het bij hoort. Bijvoorbeeld 'Voorwoord' is in de code boven de kop 'IBDS is toe aan
+                volgende stap' geplaatst. Wanneer deze inhoudsopgave wordt voorgelezen door voorleessoftware is het voor
+                bezoekers moeilijk te bepalen welke extra omschrijving bij welke kop hoort. Zorg ervoor dat content dat
+                bij een kop hoort in de code onder deze kop is geplaatst, visueel mag de huidige indeling worden
+                aangehouden.</p>
+            <h4 id="distinguishable">1.4 Onderscheidbaar</h4>
+            <h5 id="contrast-minimum">1.4.3 Contrast (minimum) (Niveau AA)</h5>
+            <p class="readMore">Informatie over succescriterium <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum"
+                    target="_blank">1.4.3 Contrast (minimum)</a></p>
+            <div class="outcome">
+                <p class="failed">
+                    Uitkomst: Onvoldoende
+                </p>
+            </div>
+            <p class="extern"><strong>Bevinding 15:</strong> In de footer op pagina
+                magazines.interbestuurlijkedatastrategie.nl/ibds/2022/01/stelseldag-2022--terugblik staan de links
+                'Colofon', 'Cookies', 'Toegankelijkheid' en 'TeamIBDS@ICTU.nl'. Wanneer met het toetsenbord focus wordt
+                geplaatst op deze links verandert de tekstkleur van wit naar geel (HEX #F9E11E). Op de groene
+                achtergrond (HEX #39870C) hebben deze teksten een te laag contrast. De contrastverhouding is hier 3,4:1,
+                waar dat minimaal 4,5:1 moet zijn.<br>Dit contrastprobleem komt ook voor op pagina
+                magazines.interbestuurlijkedatastrategie.nl/ibds/2022/01/actueel en
+                magazines.interbestuurlijkedatastrategie.nl/ibds/2022/01/ambassadeur-jan-van-ginkel. </p>
+            <p class="extern"><strong>Bevinding 16:</strong> De witte tekst 'IBDS Magazine #1' op pagina
+                magazines.interbestuurlijkedatastrategie.nl/ibds/2022/01/ambassadeur-jan-van-ginkel heeft onvoldoende
+                contrast op de grijze achtergrond (HEX #97928B). De contrastverhouding is hier 3:1, waar dat minimaal
+                4,5:1 moet zijn. </p>
+            <p class="extern"><strong>Bevinding 17:</strong> De witte tekst 'STELSELDAG IBDS Magazine #1' op pagina
+                magazines.interbestuurlijkedatastrategie.nl/ibds/2022/01/stelseldag-2022--terugblik heeft een te laag
+                contrast op de lichtblauwe achtergrond (HEX #BEC8CE). De contrastverhouding is hier 1,7:1, waar dat
+                minimaal 4,5:1 voor de tekst 'IBDS Magazine #1' moet zijn en 3:1 voor de tekst 'STELSELDAG'. </p>
+            <p class="extern"><strong>Bevinding 18:</strong> Advies: Op pagina
+                magazines.interbestuurlijkedatastrategie.nl/ibds/2022/01
+                staan teksten voor afbeeldingen. Hierdoor hebben de teksten op sommige plekken onvoldoende contrast en
+                kunnen de teksten voor sommige bezoekers met slecht zicht niet goed leesbaar zijn. Het is daarom beter
+                om teksten niet te plaatsen voor afbeeldingen. Zorg er voor dat teksten voor een achtergrond staan
+                bestaand uit één kleur die voldoende contrast heeft met de tekst.<br>Dit probleem komt ook voor op
+                andere pagina's in het magazine, bijvoorbeeld op
+                magazines.interbestuurlijkedatastrategie.nl/ibds/2022/01/stelseldag-2022--terugblik.</p>
+            <h3 id="operable">2. Bedienbaar</h3>
+
+            <h4 id="navigable">2.4 Navigeerbaar</h4>
+            <h5 id="page-titled">2.4.2 Paginatitel (Niveau A)</h5>
+            <p class="readMore">Informatie over succescriterium <a href="https://www.w3.org/TR/WCAG21/#page-titled"
+                    target="_blank">2.4.2 Paginatitel</a></p>
+            <div class="outcome">
+                <p class="failed">
+                    Uitkomst: Onvoldoende
+                </p>
+            </div>
+            <p class="extern"><strong>Bevinding 20:</strong> Pagina
+                magazines.interbestuurlijkedatastrategie.nl/ibds/2022/01 heeft als
+                paginatitel '#1 | december 2022 | IBDS Magazine'. Dit geeft aan dat het magazine van IBDS op deze pagina
+                staat maar niet dat de bezoeker zich bevindt op de cover van het magazine. Zorg ervoor dat het uit de
+                paginatitel duidelijk wordt dat deze pagina de cover van het magazine is. </p>
+            <p class="pdf"><strong>Bevinding 21:</strong> De PDF
+                realisatieibds.pleio.nl/file/download/557354e7-d2dc-4f74-8a3f-8486ea24b70c/20221118-ibds-samenvatting-advies-gemeente-breda-inzet-vliegende-drone-002-prdf-5478797.pdf
+                heeft geen documenttitel. Zorg ervoor dat de PDF een documenttitel krijgt dat de inhoud van het document
+                omschrijft. Ook moet bij het openen van de PDF de documenttitel worden getoond en niet de bestandsnaam,
+                dit kan worden ingesteld bij de documenteigenschappen onder 'Weergave bij openen'.</p>
+
+
+            <h3 id="robust">4. Robuust</h3>
+            <h4 id="compatible">4.1 Compatibel</h4>
+            <h5 id="name-role-value">4.1.2 Naam, rol, waarde (Niveau A)</h5>
+            <p class="readMore">Informatie over succescriterium <a href="https://www.w3.org/TR/WCAG21/#name-role-value"
+                    target="_blank">4.1.2 Naam, rol, waarde</a></p>
+            <div class="outcome">
+                <p class="failed">
+                    Uitkomst: Onvoldoende
+                </p>
+            </div>
+            <p><strong>Bevinding 24:</strong> Deze bevinding vereist mogelijk een technische oplossing:<br>Op de
+                homepage is een video op de pagina geplaatst door middel van een iframe-element. Een iframe-element
+                heeft altijd een title-attribuut nodig dat de inhoud van het element beschrijft. Zorg ervoor dat een
+                title-attribuut op het iframe-element wordt geplaatst. De waarde van het title-attribuut moet de video
+                beschrijven.</p>
+
+
+
+    </div>
+
+</body>
+
+</html>
