@@ -63,6 +63,10 @@ th {
     background-color: black;
 }
 
+.solved {
+    text-decoration: line-through;
+}
+
 .issue a {
     color: white;
     font-size: 150%;
