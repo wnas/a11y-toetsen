@@ -12,7 +12,9 @@ th {
 .discussion,
 .issue,
 .extern,
-.pdf {
+.pdf,
+.content,
+.platform {
     padding: 20px;
 }
 
@@ -20,7 +22,9 @@ th {
 .solution:before,
 .discussion:before,
 .extern::before,
-.pdf::before {
+.pdf::before,
+.content::before,
+.platform::before {
     display: block;
     padding: 10px 0;
     margin-bottom: 10px;
@@ -43,9 +47,18 @@ th {
     content: "PDF";
 }
 
+.content::before {
+    content: "Redactie"
+}
+
+
+.platform::before {
+    content: "Pleio"
+}
 .solution {
     background-color: lightseagreen;
 }
+
 
 .discussion {
     background-color: orange;
