@@ -57,21 +57,17 @@ th {
 .solution {
     background-color: lightseagreen;
 }
-
-
 .discussion {
     background-color: orange;
 }
-
 .extern {
     background-color: hotpink;
 }
-
-.pdf {
-    background-color: coral;
-}
 .content {
     background-color: rgb(164, 182, 139);
+}
+.pdf {
+    background-color: coral;
 }
 .platform {
     background-color: rgb(147, 204, 245);
