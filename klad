@@ -1,0 +1,12 @@
+<tr>
+                        <th>Redactie</th>
+                        <td><a href="index.html">Alle punten</a></td>
+                    </tr>
+                    <tr>
+                        <th>Leverancier</th>
+                        <td><a href="leverancier.html">Punten voor pleio</a></td>
+                    </tr>
+                    <tr>
+                        <th>Discussie</th>
+                        <td><a href="discussie.html">Punten voor discussie</a></td>
+                    </tr>
