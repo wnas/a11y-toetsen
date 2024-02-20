@@ -71,6 +71,12 @@ th {
 .pdf {
     background-color: coral;
 }
+.content {
+    background-color: honeydew;
+}
+.platform {
+    background-color: powderblue;
+}
 
 .issue {
     background-color: black;
