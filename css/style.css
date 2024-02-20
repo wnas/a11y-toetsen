@@ -48,9 +48,8 @@ th {
 }
 
 .content::before {
-    content: "Redactie"
+    content: "Redactie";
 }
-
 
 .platform::before {
     content: "Pleio"
@@ -72,10 +71,10 @@ th {
     background-color: coral;
 }
 .content {
-    background-color: honeydew;
+    background-color: rgb(164, 182, 139);
 }
 .platform {
-    background-color: powderblue;
+    background-color: rgb(147, 204, 245);
 }
 
 .issue {
