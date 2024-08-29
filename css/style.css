@@ -29,6 +29,7 @@ th {
     padding: 10px 0;
     margin-bottom: 10px;
     border-bottom: 1px solid black;
+    font-weight: 800;
 }
 
 .solution:before {
@@ -57,7 +58,7 @@ th {
 .solution {
     background-color: lightseagreen;
 }
-.discussion {
+.discussion, .discussie {
     background-color: orange;
 }
 .extern {

@@ -10,3 +10,53 @@
                         <th>Discussie</th>
                         <td><a href="discussie.html">Punten voor discussie</a></td>
                     </tr>
+
+                    https://fsvportaal.belastingdienst.nl/
+                    
+
+                    R97PRqGtNQ>H>"]
+
+Hallo Marcel, 
+
+In onze eerdere gesprekken hebben we het gehad over de mogelijkheid om werk op basis van een fixed fee uit te voeren vanuit Formatic B.V. voor Stichting Pleio. Gezien het aantal nieuwe Dossier projecten die binnengehaald zijn, willen ik graag kijken of het voor beide partijen een goed idee is om dit toe te passen voor de aankomende werkzaamheden. In onze ogen heeft het werken met een vast bedrag en opleverdatum een aantal voordelen, voor beide partijen: - Het vaste bedrag kan op een transparante manier worden doorbelast naar een derde partij, per project. 
+
+Er is geen noodzaak meer om de uren los bij te houden.
+- Door het vast te leggen reserveren wij tijd in onze planning om de oplevering te garanderen, iets wat bij variabele inhuur basis niet altijd mogelijk zal zijn. 
+- Wij behouden flexibiliteit om zaken op te pakken wanneer het voor ons goed past, uiteraard binnen de afgesproken termijn. Daarbij kunnen wij context switching minimaal houden, en in dit geval bijvoorbeeld de voortgang van de migratie van de infrastructuur beter waarborgen. Ik heb maandagochtend contact gehad met Wilfred en gekeken naar de planning en requirements van de werkzaamheden voor de komende tijd. De drie concrete dingen die opgepakt moeten gaan worden zijn DGH, MSNP, en de ASV koppeling. Gebaseerd op wat ik van Wilfred heb meegekregen aan requirements, wil ik het volgende voorstellen: 
+
+
+Oplevering Helm chart & TEST omgeving DGH - 4000 Euro 
+opleverdatum: 1 maart 2024
+- Een correct werkende Helm chart in de Pleio Helm Charts project waarmee alle omgevingen gedeployed kunnen worden 
+- Een Gitlab Repository & Gitlab CI/CD pipelines om container images te bouwen 
+- Een werkende TEST omgeving, bestaande uit: 
+  - Django deployment Dossier 
+  - Database, incl backups 
+  - Storage, incl backups 
+  - Chatwoot deployment 
+  - Chatwoot database, incl backups 
+  - DigiD mock koppeling met behulp van SimpleSaml 
+  - Opzetten van de DigiD koppeling in samenwerking met de BD (anders dan fsv en sadp)
+
+Oplevering ASV koppeling - 12.000 Euro 
+opleverdatum: 15 april 2024
+  - Onderzoek naar de meest geschikte en veilige methode om de koppeling met Rijksweb te maken 
+  - Het maken van een test setup om de gekozen methode te valideren 
+  - Het aanmaken van de benodigde infrastructuur met behulp van Terraform 
+  - Het beschikbaar maken van de koppeling voor de Dossier applicaties
+  
+  
+Oplevering Helm chart & TEST omgeving Peter Portaal - 4000 Euro 
+opleverdatum: 1 juli 2024
+- Een correct werkende Helm chart in de Pleio Helm Charts project waarmee alle omgevingen gedeployed kunnen worden 
+- Een Gitlab Repository & Gitlab CI/CD pipelines om container images te bouwen 
+- Een werkende TEST omgeving, bestaande uit: 
+  - Django deployment Dossier 
+  - Database, incl backups 
+  - Storage, incl backups 
+  - Chatwoot deployment 
+  - Chatwoot database, incl backups 
+  - DigiD mock koppeling met behulp van SimpleSaml - Opzetten van de DigiD koppeling in samenwerking met de BD (anders dan fsv en sadp)
+  
+
+Het opleveren van de Helm chart en de TEST omgeving geeft Ted (of een andere Ops engineer) de perfecte basis om REVIEW/ACC/PROD aan te maken. De migratie werkzaamheden zullen dan nog steeds onder het afgesproken variabele uurtarief uitgevoerd worden, en bovengenoemde projecten worden zijdelings uitgevoerd door 1 van ons. Met deze opzet zorgen we ervoor dat de migratie blijft doorlopen, aangezien het voor ons duidelijk is wat er moet gebeuren en wanneer er een oplever moment plaatsvindt. Het voltooien van de migratie heeft uiteindelijk voor Pleio een groot voordeel heeft als het gaat om deployment snelheid, stabiliteit en security. Hoe meer Dossier projecten er gaan lopen, hoe relevanter deze zaken zullen gaan zijn. Hoe sta jij tegenover dit aanbod? Als jij hier ook tevreden mee bent en de opleverdata zijn akkoord, ook voor Wilfred en de nieuwe planning, dan kan ik het formeel opstellen. Groeten,

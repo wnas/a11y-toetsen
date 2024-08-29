@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Alleen de bevindingen - Audit digitale toegankelijkheid website Pleio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="Toegankelijkheidsonderzoeken" />
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="../css/style.css" media="all">
+</head>
+
+<body>
+  <div class="site-container">
+    <header>
+      <div>
+        <span class="h">Toegankelijkheidsonderzoek</span>
+        <!--
+        <span class="h">Toegankelijkheidscertificaat</span>  
+        <span class="h">Quickscan toegankelijkheid</span>
+-->
+      </div>
+    </header>
+    <main>
+      <h1>Issues: <br>Audit digitale toegankelijkheid website Pleio</h1>
+      <p>(Alleen de bevindingen)</p>
+      <h2>Scope van de evaluatie</h2>
+      <table>
+        <tbody>
+          <tr>
+            <th>Naam website</th>
+            <td>Pleio</td>
+          </tr>
+          <tr>
+            <th>Datum</th>
+            <td>26 augustus 2024</td>
+          </tr>
+          <tr>
+            <th>Scope van de website</th>
+            <td>
+              <!-- for -->
+              Binnen de scope van het onderzoek valt:<br>
+              <ul>
+                <li>Alle pagina's op pleio.nl</li>
+                <li>Alle PDF's op pleio.nl</li>
+              </ul>Buiten de scope van het onderzoek valt:<br>
+              <ul>
+                <li>Nieuwsbrieven op het domein stichting-pleio.email-provider.eu, dit vergt een apart onderzoek.</li>
+                <li>Subwebsite(s) waarbij de HTML en/of het systeem afwijkt van de onderzochte website.</li>
+                <li>Alle externe systemen en websites waar via het onderzochte domein met een link naar wordt verwezen.
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>Conformiteitsdoel</th>
+            <td>WCAG 2.1 niveau AA</td>
+          </tr>
+
+          <tr>
+            <th>Leverancier</th>
+            <td><a href="leverancier.html">Punten voor pleio</a></td>
+          </tr>
+          <tr>
+            <th>Discussie</th>
+            <td><a href="discussie.html">Discussiepunten</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Uitgebreide toetsresultaten</h2>
+      <div class="outcome">Aantal bevindingen: 10 (26)</div>
+      <h3 id="perceivable">1. Waarneembaar</h3>
+      <h4 id="text-alternatives">1.1 Tekstalternatieven</h4>
+      <h5 id="non-text-content">1.1.1 Niet-tekstuele content (Niveau A)</h5>
+      <p class="readMore">Informatie over succescriterium <a href="https://www.w3.org/TR/WCAG21/#non-text-content"
+          target="_blank">1.1.1 Niet-tekstuele content</a></p>
+      <div class="outcome">
+        <p class="failed">
+          Uitkomst: Onvoldoende
+        </p>
+      </div>
+      <p><strong>Bevinding 1:</strong> Het logo van Pleio in het navigatiemenu, bijvoorbeeld op <a target="_blank"
+          class="urlBreak" rel="nofollow"
+          href="https://pleio.nl/page/view/11886439-de59-4190-b52e-528786a0ee53/toepassingen-23">pleio.nl/page/view/11886439-de59-4190-b52e-528786a0ee53/toepassingen-23</a>,
+        heeft de alternatieve tekst 'Terug naar de homepagina'. Het logo dient tenminste de naam van de organisatie en
+        de tekst 'Logo' te bevatten. Pas de tekst in het alt attribuut aan naar 'Logo Pleio, terug naar de hoofdpagina'
+        of iets dergelijks.</p>
+      <p><strong>Bevinding 2:</strong> Op pagina <a target="_blank" class="urlBreak" rel="nofollow"
+          href="https://pleio.nl/page/view/11886439-de59-4190-b52e-528786a0ee53/toepassingen-23">pleio.nl/page/view/11886439-de59-4190-b52e-528786a0ee53/toepassingen-23</a>
+        staan organisatielogo's onder de kop 'Enkele deelnemers aan Pleio'. Visueel kan men zien welke specifieke
+        organisaties dit zijn. De afbeelding heeft in het alt attribuut als alternatieve tekst 'logo's van de gemeenten
+        ter illustratie' dit omschrijft niet wat er te zien is. Het is tevens een incorrecte omschrijving, daar niet
+        alle organisaties gemeentes betreffen. Zorg dat de er een correcte alt tekst aanwezig is. Overweeg de afbeelding
+        op te splitsen per individueel logo, of plaats een bijschrijft gekoppeld aan de afbeelding middels het
+        fig-caption element.</p>
+      
+      <h4 id="adaptable">1.3 Aanpasbaar</h4>
+      <h5 id="info-and-relationships">1.3.1 Info en relaties (Niveau A)</h5>
+      <p class="readMore">Informatie over succescriterium <a href="https://www.w3.org/TR/WCAG21/#info-and-relationships"
+          target="_blank">1.3.1 Info en relaties</a></p>
+      <div class="outcome">
+        <p class="failed">
+          Uitkomst: Onvoldoende
+        </p>
+      </div>
+      <p><strong>Bevinding 5:</strong> Op pagina <a target="_blank" class="urlBreak" rel="nofollow"
+          href="https://pleio.nl/page/view/11886439-de59-4190-b52e-528786a0ee53/toepassingen-23">pleio.nl/page/view/11886439-de59-4190-b52e-528786a0ee53/toepassingen-23</a>
+        staan een visueel genummerde lijsten die niet als zodanig (ol) in HTML zijn opgemaakt, bijvoorbeeld onder de kop
+        'Sociaal intranet'. De gehele opsomming is ondergebracht in een enkele paragraph tag (p). Op deze wijze kan
+        schermleessoftware de structuur van de lijst niet op de juiste manier interpreteren. Maak de lijst op met het
+        ol- en li- element. </p>
+     
+      <p><strong>Bevinding 7:</strong> Op pagina <a target="_blank" class="urlBreak" rel="nofollow"
+          href="https://pleio.nl/blog/view/5091cb5c-7408-4230-98f7-bcd597937d9c/7-favoriete-nieuwe-functionaliteiten-die-pleio-ontwikkelde-in-2023">pleio.nl/blog/view/5091cb5c-7408-4230-98f7-bcd597937d9c/7-favoriete-nieuwe-functionaliteiten-die-&hellip;</a>
+        worden de eerste alinea en de subkoppen opgemaakt middels het strong element. Strong is bedoeld om nadruk te
+        leggen op enkele woorden, en dient niet ter opmaak gebruikt te worden. Ook zijn hierdoor de subkoppen niet als
+        zodanig herkenbaar voor bezoekers die schermleessoftware gebruiken. Gebruik voor de opmaak van de intro-tekst
+        CSS, en maak de subkoppen op als koppen op het juiste kopniveau (bijvoorbeeld h2). </p>
+     
+     
+      <h5 id="identify-input-purpose">1.3.5 Identificeer het doel van de input (Niveau AA)</h5>
+      <p class="readMore">Informatie over succescriterium <a href="https://www.w3.org/TR/WCAG21/#identify-input-purpose"
+          target="_blank">1.3.5 Identificeer het doel van de input</a></p>
+      <div class="outcome">
+        <p class="failed">
+          Uitkomst: Onvoldoende
+        </p>
+      </div>
+      <p><strong>Bevinding 10:</strong> Op pagina <a target="_blank" class="urlBreak" rel="nofollow"
+          href="https://pleio.nl/">pleio.nl/</a> staan onder ‘Blijf op de hoogte’ formuliervelden. Het doel van velden
+        zoals naam en e-mailadres moeten programmatisch kunnen worden bepaald, zodat velden automatisch kunnen worden
+        ingevuld of extra hulp kan worden geboden bij het invullen. Dit kan door het autocomplete-attribuut aan de
+        input-elementen toe te voegen. Bijvoorbeeld voor e-mailadres autocomplete="email".</p>
+      
+      <h4 id="distinguishable">1.4 Onderscheidbaar</h4>
+      <h5 id="contrast-minimum">1.4.3 Contrast (minimum) (Niveau AA)</h5>
+      <p class="readMore">Informatie over succescriterium <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum"
+          target="_blank">1.4.3 Contrast (minimum)</a></p>
+      <div class="outcome">
+        <p class="failed">
+          Uitkomst: Onvoldoende
+        </p>
+      </div>
+      <p><strong>Bevinding 12:</strong> In de footer, bijvoorbeeld op pagina <a target="_blank" class="urlBreak"
+          rel="nofollow"
+          href="https://pleio.nl/page/view/aae1e0e7-6d70-41b5-aeb6-40d19577e4db/contact">pleio.nl/page/view/aae1e0e7-6d70-41b5-aeb6-40d19577e4db/contact</a>,
+        is er sprake van lichtblauwe linkteksten (HEX #2279EE) op een khaki (HEX #FCEFDA) achtergrond. Dit levert een
+        contrast van 3,6:1 op waar dit minimaal 4,5:1 behoort te zijn. Pas de kleurencombinatie aan.</p>
+      <p><strong>Bevinding 13:</strong> Op pagina <a target="_blank" class="urlBreak" rel="nofollow"
+          href="https://pleio.nl/page/view/4ef703cb-612a-45e0-a654-98cef117e56c/nieuwsbrieven">pleio.nl/page/view/4ef703cb-612a-45e0-a654-98cef117e56c/nieuwsbrieven</a>
+        staat onder de kop 'Meld je aan voor onze maandelijkse nieuwsbrief' tekst over een uitvergroot Pleio logo heen.
+        De op plekken lichtblauwe achtergrond (HEX #4B8FF5) heeft met de witte tekst een contrast van 3,2:1 waar dit
+        minimaal 4,5:1 behoort te zijn. Pas de kleurencombinatie aan.</p>
+      <p><strong>Bevinding 14:</strong> Op pagina <a target="_blank" class="urlBreak" rel="nofollow"
+          href="https://pleio.nl/page/view/b7d41c42-8720-4055-8e12-33bb1ea7202d/nieuw-over-ons">pleio.nl/page/view/b7d41c42-8720-4055-8e12-33bb1ea7202d/nieuw-over-ons</a>
+        staan blauwe linkteksten (HEX #0671F2) op een lichtgrijze achtergrond (HEX #F5F5F5). Hier is sprake van 4,1:1
+        kleurcontrast waar dit minimaal 4,5:1 behoort te zijn. Pas de kleurencombinatie aan. Soortgelijke problemen
+        komen veelvuldig op de website voor, bijvoorbeeld op pagina <a target="_blank" class="urlBreak" rel="nofollow"
+          href="https://pleio.nl/page/view/11886439-de59-4190-b52e-528786a0ee53/toepassingen-23">pleio.nl/page/view/11886439-de59-4190-b52e-528786a0ee53/toepassingen-23</a>.
+      </p>
+     
+      <h3 id="operable">2. Bedienbaar</h3>
+      <h4 id="keyboard-accessible">2.1 Toetsenbordtoegankelijk</h4>
+      <h5 id="keyboard">2.1.1 Toetsenbord (Niveau A)</h5>
+      <p class="readMore">Informatie over succescriterium <a href="https://www.w3.org/TR/WCAG21/#keyboard"
+          target="_blank">2.1.1 Toetsenbord</a></p>
+      <div class="outcome">
+        <p class="failed">
+          Uitkomst: Onvoldoende
+        </p>
+      </div>
+      
+      <h5 id="character-key-shortcuts">2.1.4 Enkel teken sneltoets (Niveau A)</h5>
+      <p class="readMore">Informatie over succescriterium <a
+          href="https://www.w3.org/TR/WCAG21/#character-key-shortcuts" target="_blank">2.1.4 Enkel teken sneltoets</a>
+      </p>
+      <div class="outcome">
+        <p class="failed">
+          Uitkomst: Onvoldoende
+        </p>
+      </div>
+      
+      <h4 id="navigable">2.4 Navigeerbaar</h4>
+      <h5 id="focus-visible">2.4.7 Focus zichtbaar (Niveau AA)</h5>
+      <p class="readMore">Informatie over succescriterium <a href="https://www.w3.org/TR/WCAG21/#focus-visible"
+          target="_blank">2.4.7 Focus zichtbaar</a></p>
+      <div class="outcome">
+        <p class="failed">
+          Uitkomst: Onvoldoende
+        </p>
+      </div>
+     
+      <h4 id="input-modalities">2.5 Input modaliteiten</h4>
+      <h5 id="label-in-name">2.5.3 Label in naam (Niveau A)</h5>
+      <p class="readMore">Informatie over succescriterium <a href="https://www.w3.org/TR/WCAG21/#label-in-name"
+          target="_blank">2.5.3 Label in naam</a></p>
+      <div class="outcome">
+        <p class="failed">
+          Uitkomst: Onvoldoende
+        </p>
+      </div>
+      
+      <h3 id="understandable">3. Begrijpelijk</h3>
+      <h4 id="readable">3.1 Leesbaar</h4>
+      <h5 id="language-of-page">3.1.1 Taal van de pagina (Niveau A)</h5>
+      <p class="readMore">Informatie over succescriterium <a href="https://www.w3.org/TR/WCAG21/#language-of-page"
+          target="_blank">3.1.1 Taal van de pagina</a></p>
+      <div class="outcome">
+        <p class="failed">
+          Uitkomst: Onvoldoende
+        </p>
+      </div>
+     
+      <h5 id="language-of-parts">3.1.2 Taal van onderdelen (Niveau AA)</h5>
+      <p class="readMore">Informatie over succescriterium <a href="https://www.w3.org/TR/WCAG21/#language-of-parts"
+          target="_blank">3.1.2 Taal van onderdelen</a></p>
+      <div class="outcome">
+        <p class="failed">
+          Uitkomst: Onvoldoende
+        </p>
+      </div>
+      <p><strong>Bevinding 21:</strong> Op pagina <a target="_blank" class="urlBreak" rel="nofollow"
+          href="https://pleio.nl/">pleio.nl/</a> staat een video van Vimeo onder de kop ‘Dit is Pleio – een opensource
+        platform voor jouw organisatie’. Het iframe heeft de Engelstalige titel ‘vimeo-player’ en de knoppen hebben
+        tevens Engelstalige toegankelijke namen. Zorg dat alle functionaliteiten in het Nederlands zijn opgemaakt,
+        gezien het een Nederlandstalige pagina betreft.</p>
+      <h4 id="input-assistance">3.3 Assistentie bij invoer</h4>
+      <h5 id="error-identification">3.3.1 Foutidentificatie (Niveau A)</h5>
+      <p class="readMore">Informatie over succescriterium <a href="https://www.w3.org/TR/WCAG21/#error-identification"
+          target="_blank">3.3.1 Foutidentificatie</a></p>
+      <div class="outcome">
+        <p class="failed">
+          Uitkomst: Onvoldoende
+        </p>
+      </div>
+     
+     
+      <h5 id="labels-or-instructions">3.3.2 Labels of instructies (Niveau A)</h5>
+      <p class="readMore">Informatie over succescriterium <a href="https://www.w3.org/TR/WCAG21/#labels-or-instructions"
+          target="_blank">3.3.2 Labels of instructies</a></p>
+      <div class="outcome">
+        <p class="failed">
+          Uitkomst: Onvoldoende
+        </p>
+      </div>
+      <p><strong>Bevinding 24:</strong> Op pagina <a target="_blank" class="urlBreak" rel="nofollow"
+          href="https://pleio.nl/">pleio.nl/</a> staan onder ‘Blijf op de hoogte’ formuliervelden. Het formulierveld
+        bevat een asterisk, echter wordt bij het formulier nergens uitgelegd dat dit betekent dat het veld verplicht is.
+        Dit probleem doet zich meermalig op de website voor, bijvoorbeeld op <a target="_blank" class="urlBreak"
+          rel="nofollow"
+          href="https://pleio.nl/page/view/aae1e0e7-6d70-41b5-aeb6-40d19577e4db/contact">pleio.nl/page/view/aae1e0e7-6d70-41b5-aeb6-40d19577e4db/contact</a>
+        en <a target="_blank" class="urlBreak" rel="nofollow"
+          href="https://pleio.nl/page/view/4ef703cb-612a-45e0-a654-98cef117e56c/nieuwsbrieven">pleio.nl/page/view/4ef703cb-612a-45e0-a654-98cef117e56c/nieuwsbrieven</a>.
+      </p>
+      <h5 id="error-suggestion">3.3.3 Foutsuggestie (Niveau AA)</h5>
+      <p class="readMore">Informatie over succescriterium <a href="https://www.w3.org/TR/WCAG21/#error-suggestion"
+          target="_blank">3.3.3 Foutsuggestie</a></p>
+      <div class="outcome">
+        <p class="failed">
+          Uitkomst: Onvoldoende
+        </p>
+      </div>
+     
+      <h3 id="robust">4. Robuust</h3>
+      <h4 id="compatible">4.1 Compatibel</h4>
+      <h5 id="name-role-value">4.1.2 Naam, rol, waarde (Niveau A)</h5>
+      <p class="readMore">Informatie over succescriterium <a href="https://www.w3.org/TR/WCAG21/#name-role-value"
+          target="_blank">4.1.2 Naam, rol, waarde</a></p>
+      <div class="outcome">
+        <p class="failed">
+          Uitkomst: Onvoldoende
+        </p>
+      </div>
+     
+  </div>
+ 
+</body>
+
+</html>
