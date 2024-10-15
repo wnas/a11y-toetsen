@@ -55,6 +55,9 @@ th {
 .platform::before {
     content: "Pleio"
 }
+.aria::before {
+    content: "Pleio / WAI-aria";
+}
 .solution {
     background-color: lightseagreen;
 }
